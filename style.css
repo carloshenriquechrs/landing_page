@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+header{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url(imgs/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+header::before{
+    content:"";
+    background: rgba(0, 0, 3, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    max-width: 1350px;
+    height: 100%;
+    padding: 0 2%;
+}
+
+.midias{
+    padding-top: 10px;
+    display: flex;
+  justify-content: space-between;
+}
+
+.midias_i i{
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.nav_desktop{
+    padding: 20px 0 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid white;
+}
+
+.menu_responsivo{
+    display: none;
+    position: relative;
+    top: 3px; 
+    z-index: 999;
+    background-color: white;
+}
+
+.menu_icon{
+    display: none;
+    cursor: pointer;
+}
+
+.ul_reponsive li{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+}
+
+.ul_reponsive li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu_icon i{
+    font-size: 25px;
+    color: white;
+}
+
+.logo a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.ul ul{
+    display: flex;
+}
+
+.ul li{
+    list-style: none;
+    margin-left: 60px;
+}
+
+.ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.welcome{
+    padding: 0 10px;
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px;
+}
+
+.welcome h2{
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+}
+
+.welcome span{
+    color: lightskyblue;
+}
+
+.welcome p{
+    font-size: 15px;
+    color: white;
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+.welcome_button{
+    margin-top: 30px;
+}
+
+.welcome_button button{
+    padding: 12px 25px;
+    background-color: rgb(0, 136, 255) ;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Mains */
+
+/* Section_01 Planos */
+
+.planos_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.planos_title{
+    background-color: #ccc;
+    padding: 30px;
+}
+
+.planos_title div{
+    text-align: center;
+    max-width: 290px;
+    margin: 0 auto;
+    border-top: 2px solid rgb(0, 136, 255) ;
+}
+
+.planos_title h1{
+    font-weight: 300;
+    color: rgb(0, 136, 255) ;
+    font-size: 25px;
+}
+
+.planos_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.planos_single{
+    max-width: 270px;
+    width: 33.3%;
+    box-shadow: 10px 10px 5px -3px rgba(128,128,128,1);
+}
+
+.planos_single .title_single{
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 136, 255) ;
+    padding: 8px;
+}
+
+.title_single h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.planos_infos{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.info_single{
+    color:rgb(174, 173, 173) ;
+    margin: 5px;
+}
+
+.info_single span{
+    margin-left: 3px;
+}
+
+.planos_valor{
+    margin: 0 auto;
+    max-width: 150px;
+    text-align: center;
+    border-top: 2px solid rgb(174, 173, 173);
+}
+
+.planos_valor h2{
+    margin: 10px 0 30px 0;
+    color:rgb(174, 173, 173);
+}
+
+/* Section_02 Sobre */
+
+.section_sobre{
+    background-image: url(imgs/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.section_sobre::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.sobre_container{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px 80px 20px;
+    /* padding: 30px 0px 80px 0px; */
+
+}
+
+.sobre_title{
+    position: relative;
+    text-align: center;
+}
+
+.sobre_title h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.sobre_title  h2 > span{
+    color: lightskyblue;
+}
+
+.sobre_text{
+    position: relative;
+}
+
+.sobre_text p{
+    color: white;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Section 03 Contato */
+
+/* Container de Contato */
+
+.section_contato{
+    margin: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_contato{
+    width: 50%;
+}
+
+.nosso_time{
+    width: 50%;
+}
+
+.container_contato .form_container{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0px 20px 0px 0px;
+}
+
+.line{
+    border-bottom: 4px solid black;
+    max-width: 60px;
+}
+
+.entre_em_contato_title h2{
+    color:rgb(174, 173, 173);    
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.form_contato input{
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form_contato textarea{
+    resize: none;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.form_button button{
+    background-color: rgb(0, 136, 255) ;
+    border: none;
+    padding: 10px 45px;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Container nosso time */
+
+.nosso_time_container{
+    display: flex;
+    gap: 20px;
+}
+
+.nosso_time_tittle h2{
+    font-size: 25px;
+    color:rgb(174, 173, 173);    
+    font-weight: 300;
+    margin-bottom: 18px;
+}
+
+.nt_single{
+    width: 50%;
+    max-width: 280px;
+    padding: 20px 10px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    box-shadow: 10px 10px 5px -3px rgba(128,128,128,1);
+}
+
+.nt_perfil{
+    max-width: 230px;
+    display: flex;
+    align-items: center;
+}
+
+.ntp_img{
+    margin-right: 10px;
+    background-image: url(imgs/Akaly.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.ntp_name h2{
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.ntp_name p{
+    font-size: 14px;
+    color:rgb(174, 173, 173);    
+}
+
+.ntp_name span{
+    font-size: 12px;
+}
+
+.nt_text{
+    max-width: 200px;
+    margin: 20px auto;
+}
+
+.nt_text p{
+    font-size: 14px;
+    color:rgb(174, 173, 173);    
+}
+
+footer{
+    width: 100%;
+    padding: 10px 2%;
+    background-color: black;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+}
+/* Responsivo */
+
+/* Section 01 Planos */
+
+@media (max-width: 768px) {
+    .ul{
+        display: none;
+    }
+    .menu_icon{
+        display: block;
+    }
+}
+
+@media (max-width: 880px){
+
+.planos_box{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.planos_single{
+    width: 100%;
+    border-left: 1px solid #ccc ;
+    max-width: 500px;
+    box-shadow: 10px 10px 5px -3px rgba(128,128,128,1);
+}
+
+.planos_infos{
+    padding: 20px 0px;
+}
+
+}
+
+
+@media (max-width:820px){
+    .container_contato{
+        width: 100%;
+    }
+    
+    .container_contato .form_container{
+        margin: 30px auto;
+        max-width: 800px;
+        padding: 0;
+    }
+    
+    .nosso_time{
+        max-width: 600px;
+        width: 100%;
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .welcome{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:440px){
+    .nosso_time_container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nt_single{
+        width: 100%;
+    }
+}
